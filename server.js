@@ -20,7 +20,7 @@ app.listen(port, () => {
 
 app.get('/', async (req, res) => {
   let count = await client.incr('counter');
-  console.log('visitor count:', count);
+  console.log('visitor count:', count); // Testing commit
   res.send(`Visitor count: ${count}`);
 });
 
